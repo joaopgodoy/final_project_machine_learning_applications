@@ -20,7 +20,8 @@
 6. [Transformações nos Dados](#transformações-nos-dados)
 7. [Clustering de Municípios](#clustering-de-municípios)
 8. [Modelos de Predição](#modelos-de-predição)
-9. [Autores](#autores)
+9. [Modelos de Regressão e Boosting por Cluster](#modelos-de-regressão-e-boosting-por-cluster)
+10. [Autores](#autores)
 
 ---
 
@@ -536,3 +537,29 @@ O modelo final foi usado para:
 - Alertas precoces para municípios com tendência de alta
 
 ---
+
+## Modelos de Regressão e Boosting por Cluster
+
+Nesta seção, treinamos modelos específicos para cada cluster identificado, permitindo capturar dinâmicas locais de mortalidade.
+
+### Resultados por Cluster
+
+| Cluster | LR R² | LGB R² | Melhor Modelo |
+|---------|-------|--------|---------------|
+| 0       | 0.990 | 0.737  | Regressão Linear |
+| 1       | 0.992 | 0.900  | Regressão Linear |
+| 2       | 0.997 | 0.987  | Regressão Linear |
+
+**Análise:**
+- **Cluster 0**: A Regressão Linear teve desempenho muito superior (R² 0.99 vs 0.74).
+- **Cluster 1**: Ambos foram bem, mas LR venceu novamente.
+- **Cluster 2**: Resultados excelentes em ambos, com leve vantagem para LR.
+
+**Conclusão:**
+Assim como no modelo geral, a **Regressão Linear** se mostrou mais robusta e precisa para todos os clusters individualmente.
+
+---
+
+## Autores
+
+- **João** (e equipe)
