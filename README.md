@@ -562,4 +562,4 @@ Assim como no modelo geral, a **Regressão Linear** se mostrou mais robusta e pr
 
 ## Autores
 
-- **João** (e equipe)
+- **João Pedro Alves Notari Godoy** e **Enzo Tonon Morente**. 
